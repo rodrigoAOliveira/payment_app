@@ -1,0 +1,6 @@
+<resources>
+    <!-- activity_result -->
+    <string name="label_operation_completed">Operação Concluída!</string>
+
+    <string name="button_back">Voltar</string>
+</resources>
