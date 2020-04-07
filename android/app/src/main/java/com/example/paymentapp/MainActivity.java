@@ -40,11 +40,21 @@ public class MainActivity extends FlutterActivity {
       Intent capptaIntent = new Intent(Intent.ACTION_VIEW, capptaAppLink);
 
 
-      this.startActivityForResult(capptaIntent,  0);
+      startActivityForResult(capptaIntent,  10);
     });
 
   }
 
+
+  @Override
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+
+    if (resultCode == RESULT_OK) {
+      String value = (String) data.getStringExtra("NAME OF THE PARAMETER");
+      Log.d("TESTE", "tete " + value);
+    }
+  }
 //  @Override
 //  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 //    super.onActivityResult(requestCode, resultCode, data);

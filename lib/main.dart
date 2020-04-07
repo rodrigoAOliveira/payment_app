@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
 
-    platform.setMethodCallHandler((method) {
+    back.setMethodCallHandler((method) {
 
 
         print("ENTROU");
